@@ -8,7 +8,7 @@ document.getElementById('getWeather').addEventListener('click', async () => {
     }
 
     try {
-        const response = await fetch(`http://localhost:8080/api/weather/${city}`);
+        const response = await fetch(`https://tired-evvy-leomoreiraa-64566b5e.koyeb.app/api/weather/${city}`);
         if (!response.ok) {
             throw new Error('City not found or API error');
         }
